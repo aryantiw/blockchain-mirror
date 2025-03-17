@@ -56,6 +56,3 @@ The proof-of-work mechanism ensures computational work is required to add a bloc
 - Enhancing security with cryptographic signatures.
 - Adding a distributed peer-to-peer network.
 
-## License
-This project is open-source and available under the MIT License.
-
