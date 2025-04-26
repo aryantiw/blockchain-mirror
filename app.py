@@ -10,9 +10,10 @@ from textwrap import dedent
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
+app = Flask(__name__)
 
+# Now you can apply CORS to the app
 CORS(app)
-
 
 class Blockchain(object):
     def __init__(self):
