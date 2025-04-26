@@ -187,7 +187,7 @@ def new_transactions():
 
 @app.route('/')
 def index():
-    return jsonify({'message': 'Blockchain API is running!'})
+    return ("index.html")
 
 
 
