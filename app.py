@@ -1,5 +1,6 @@
 import hashlib
 import json
+import os
 
 from time import time
 from uuid import uuid4
@@ -187,7 +188,7 @@ def new_transactions():
 
 @app.route('/')
 def index():
-    return ("index.html")
+    return send_from_directory(os.getcwd(), 'index.html')
 
 
 
