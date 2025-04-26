@@ -11,6 +11,9 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 
 
+CORS(app)
+
+
 class Blockchain(object):
     def __init__(self):
         self.chain = []
