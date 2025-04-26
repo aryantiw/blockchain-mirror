@@ -1,7 +1,8 @@
 import hashlib
 import json
 import os
-from flask import send_from_directory
+from flask import render_template
+
 
 from time import time
 from uuid import uuid4
@@ -191,9 +192,10 @@ def new_transactions():
 
     return jsonify(response), 201
 
+
 @app.route('/')
 def index():
-    return send_from_directory(os.getcwd(), 'index.html')
+    return render_template('index.html')
 
 
 
