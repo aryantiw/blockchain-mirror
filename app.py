@@ -185,6 +185,11 @@ def new_transactions():
 
     return jsonify(response), 201
 
+@app.route('/')
+def index():
+    return jsonify({'message': 'Blockchain API is running!'})
+
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
